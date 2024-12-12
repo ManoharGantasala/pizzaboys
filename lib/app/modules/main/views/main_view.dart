@@ -35,7 +35,7 @@ class MainView extends GetView<MainController> {
             controller.selectedIndex.value = value;
           },
           elevation: 0,
-          backgroundColor: isDark? TColors.black: TColors.white,
+          backgroundColor: isDark? Colors.black: TColors.white,
           indicatorColor: isDark? TColors.white.withOpacity(0.1):TColors.black.withOpacity(0.1),
           destinations:  [
             NavigationDestination(icon: Icon (controller.selectedIndex.value==0?Iconsax.home_1:Iconsax.home_copy), label: "Home"),
